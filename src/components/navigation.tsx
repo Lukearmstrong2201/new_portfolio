@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Button } from './ui/button';
+import { Menu, X } from 'lucide-react';
 
 const navItems = [
     { name: 'Home', href: '#home' },
@@ -51,7 +53,7 @@ export default function Navigation() {
                   onClick={() => scrollToSection('#home')}
                   className="text-2xl font-bold text-gradient hover:scale-105 transition-transform"
                 >
-                  JD
+                  LA
                 </button>
               </motion.div>
     
@@ -123,6 +125,4 @@ export default function Navigation() {
           </div>
         </motion.nav>
       );
-
-
 }
